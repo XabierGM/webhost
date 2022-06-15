@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="negrita"><a href="index.html" class="icon-home3">Resumen</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="contacto.html" class="activa">Contacto</a></li>
+                <li><a href="https://twitter.com/xabiersolero" class="icon-twitter hvr-grow-rotate"></a></li>
+                <li><a href= "https://t.me/XabierGomez" class="icon-telegram hvr-grow-rotate"></a></li>
+                <li class="boton"><a href= "mailto:XabierGoMen@gmail.com" title="Enlace directo a mi correo">¡Hablemos!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Xabier Gómez Menéndez</h2>
+        <p>Traductor e intérprete.</p>
+        <img src="imagenes/profile.jpg">
+        <ul>
+            <li><span class="negrita">Nombre:</span> Xabier R. Gómez Menéndez</li>
+            <li><span class="negrita">Fecha de nacimiento: </span>14-10-1995</li>
+            <li><span class="negrita">Especialidad: </span>Traducción audiovisual</li>
+            <li><span class="negrita">Correo electrónico: </span>XabierGoMen@gmail.com</li>
+            <li><span class="negrita">Teléfono: </span>699 27 13 44</li>
+        </ul>
+        <div class="boton">
+            <a href="https://drive.google.com/file/d/1f6oZeJDRIz31zi45ov8mYwOSG69xZUxX/view?usp=sharing" title="Descarga mi CV">Descargar CV<span class="icon-download2"></span></a>
+        </div>
+    </aside>
+
+    <main id="contacto">
+        <h2>Formulario de contacto</h2>
+        <form id="curriculum" name="curriculum" method="POST" action="enviaMail.php" onsubmit="return validar();">
+        <div class="divput">
+                <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" title="Escriba su nombre completo">
+            </div>
+
+            <div>
+                <label for="correo">Email</label>
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" title="Escriba su correo electrónico">
+            </div>
+        </div>
+            <div class="textar">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Deja tu mensaje" title="añade aquí el mensaje para mí"></textarea>
+            </div>
+
+            <div id="cajaBtnEnviar">
+                <input class="boton" type="submit" name="btnEnviar" id="btnEnviar" title="Enviar curriculum" value="Enviar">
+            </div>
+        </form>
+
+        <article>
+            <h2>Información de contacto</h2>
+            <ul>
+                <li><span class="negrita">Teléfono:</span> 699 27 13 44</li>
+                <li><span class="negrita">Correo electrónico:</span> XabierGoMen@gmail.com</li>
+                <li><span class="negrita">Telegram:</span> @XabierGomez</li>
+                <li><span class="negrita">Twitter:</span> @XabierSolero</li>
+                <li><span class="negrita">Página Web:</span><a href="xabier-gomez.galizaweb.com"> xabier-gomez.galizaweb.com</a></li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <span>Xabier Ramón Gómez Menéndez</span> <p>&copy; 2019, todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
